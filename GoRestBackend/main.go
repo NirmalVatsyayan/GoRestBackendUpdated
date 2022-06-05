@@ -1,10 +1,12 @@
 package main
 
 import (
+	db "github.com/NirmalVatsyayan/GoRestBackend/Database/MongoConn"
 	router "github.com/NirmalVatsyayan/GoRestBackend/Router"
 )
 
 func init() {
+	db.InitializeMongoConn("localhost", 27017, "", "DemoRestBackend", "")
 
 }
 
