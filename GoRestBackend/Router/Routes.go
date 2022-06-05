@@ -27,6 +27,7 @@ func RouteDispatcher() *gin.Engine {
 	// get query param and url param
 	apisV1.GET("/user/:userid", controller.UserDetail)
 	apisV1.POST("/register", controller.UserRegister)
+	apisV1.PUT("/update", controller.UserUpdate)
 
 	// return engine with route defined
 	return router
